@@ -35,6 +35,14 @@ h1  {
     padding: 10px 50px;
     border-radius: 6%;
 }
+
+#times-up   {
+    display: none;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
 .confirm-button {
     display: none;
 }

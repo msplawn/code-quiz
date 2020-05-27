@@ -7,6 +7,8 @@ var answerIndicator = document.getElementById('answerIndicator');
 var highScore = document.getElementById('high-score');
 var highScores = document.getElementById('high-scores');
 var backButton = document.getElementById('back');
+var timesUp = document.getElementById('times-up')
+var tryAgain = document.getElementById('try-again')
 var interval;
 var count = 75;
 
@@ -39,11 +41,26 @@ function startTimer()   {
         countdownEl.textContent = "Time: " + count;
 
         if (count === 0)    {
-            clearInterval(timerInterval);
-            alert("Time's up!")
+            clearInterval();
+            // alert("Time's up!")
+            timesUpFunction()
         }
         
     }, 1000);
+}
+
+function timesUpFunction() {
+    countdownEl.style.display = "none";
+    introEl.style.display = "none";
+    choices.style.display = "none";
+    timesUp.style.display = "block";
+}
+
+function tryAgainButton() {
+    timesUp.style.display = "none"
+    introEl.style.display = "block";
+    clearInterval();
+    count = 75;
 }
 
 
@@ -57,15 +74,15 @@ function showHighScore() {
     introEl.style.display = "none";
     choices.style.display = "none";
     highScores.style.display = "block";
-
+    clearInterval();
     
 }
 
 function backButtonReset() {
     highScores.style.display = "none";
     introEl.style.display = "block";
-    clearInterval(timerInterval);
-    
+    clearInterval();
+    count = 75;
     
 }
 
@@ -73,4 +90,5 @@ startButton.addEventListener("click", startQuiz);
 choices.addEventListener("click", checkAnswer);
 highScore.addEventListener('click', showHighScore);
 backButton.addEventListener('click', backButtonReset);
+tryAgain.addEventListener('click', tryAgainButton);
 
