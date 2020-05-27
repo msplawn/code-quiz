@@ -28,10 +28,13 @@ h1  {
     margin: auto;
     justify-content: center;
     text-align: center;
-    
-    
 }
 
+.button {
+    margin: 10px;
+    padding: 10px 50px;
+    border-radius: 6%;
+}
 .confirm-button {
     display: none;
 }

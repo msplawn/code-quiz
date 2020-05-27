@@ -42,8 +42,10 @@ function startTimer()   {
             clearInterval(timerInterval);
             alert("Time's up!")
         }
+        
     }, 1000);
 }
+
 
 function checkAnswer() {
     answerIndicator.style.display = "block";
@@ -62,7 +64,7 @@ function showHighScore() {
 function backButtonReset() {
     highScores.style.display = "none";
     introEl.style.display = "block";
-    clearInterval(count);
+    clearInterval(timerInterval);
     
     
 }
