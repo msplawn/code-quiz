@@ -24,10 +24,14 @@ h1  {
     text-align: center;
 }
 
+
+
 .button-container  {
-    margin: auto;
+    margin: 0px 20%;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .button {

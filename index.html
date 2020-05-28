@@ -27,9 +27,9 @@
         </nav>
 
         <div id="intro">
-            <h1 class="header">Start Quiz</h1>
+            <h1 class="header">Welcome!</h1>
 
-            <p class="instructive-text">For this quiz you will be asked to answer a series of 5 questions about
+            <p class="instructive-text">Test your coding knowledge with this simple quiz! You will be asked to answer a series of 5 questions about
                 coding.
                 Using the knowledge you've gained since the start of Bootcamp, choose between the 4 options. You
                 have 75
@@ -50,6 +50,7 @@
             <h2 class="question" id="questionsHeader">Do i still have any energy to dedicate to this homework?</h2>
 
             <div id="answer-buttons">
+                <div class="button-container">
                 <button type="button" id="choice1" class="btn btn-primary">No</button>
             
                 <button type="button" id="choice2" class="btn btn-primary">No</button>
@@ -57,6 +58,7 @@
                 <button type="button" id="choice3" class="btn btn-primary">No</button>
             
                 <button type="button" id="choice4" class="btn btn-primary">No</button>
+            </div>
             </div>
 
             <div id="answerIndicator">
@@ -81,11 +83,11 @@
         </div>
 
         <div class="col-sm-4 text-center" id="endingScore" style = "display: none; margin-left: auto; margin-right: auto;">
-            <h2 class="text-left">Quiz Complete!</h2>
-            <p class="text-left" id="scoreText"></p>
+            <h2>Quiz Complete!</h2>
+            <p id="scoreText"></p>
                 <p class="float-left mr-2">Enter Your Initials<p>
                 <input type="text" class="float-left mr-2" id="initials">
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                <button type="submit" class="float-right btn btn-primary" id="submit">Submit</button>
         </div>
 
 
