@@ -54,14 +54,13 @@ h1  {
 #answer-buttons {
     display: flex;
     flex-direction: column;
-    margin: 0px 40%;
     justify-content: center;
     text-align: center;
+    margin: 0% 20%;
 }
-.answer-button  {
+
+.btn-primary    {
     margin: 10px;
-    padding: 10px 50px;
-    border-radius: 6%;
 }
 
 #intro  {

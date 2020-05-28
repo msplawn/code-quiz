@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
 
 </head>
 
@@ -40,7 +40,7 @@
             </p>
 
             <div class="button-container">
-                <button type="button" id="start-button" class="button">Start Quiz</button>
+                <button type="button" id="start-button" class="btn btn-primary">Start Quiz</button>
             </div>
 
         </div>
@@ -50,13 +50,13 @@
             <h2 class="question" id="questionsHeader">Do i still have any energy to dedicate to this homework?</h2>
 
             <div id="answer-buttons">
-                <button type="button" id="choice1" class="answer-button">No</button>
+                <button type="button" id="choice1" class="btn btn-primary">No</button>
             
-                <button type="button" id="choice2" class="answer-button">No</button>
+                <button type="button" id="choice2" class="btn btn-primary">No</button>
             
-                <button type="button" id="choice3" class="answer-button">No</button>
+                <button type="button" id="choice3" class="btn btn-primary">No</button>
             
-                <button type="button" id="choice4" class="answer-button">No</button>
+                <button type="button" id="choice4" class="btn btn-primary">No</button>
             </div>
 
             <div id="answerIndicator">
@@ -69,15 +69,15 @@
 
         <div id="times-up">
             <h2>Time's up!</h2>
-            <button type="button" id="try-again" class="back">Try Again!</button>
+            <button type="button" id="try-again" class="btn btn-primary">Try Again!</button>
 
         </div>
 
         <div id="high-scores">
             <h2>High Scores</h2>
             <div class="list-group" id="attachHS"></div> 
-            <button type="button" class="btn btn-link" id="back">Back</button>
-            <button type="button" class="btn btn-link" id="clearHS">Clear High Scores</button>
+            <button type="button" class="btn btn-primary" id="back">Back</button>
+            <button type="button" class="btn btn-primary" id="clearHS">Clear High Scores</button>
         </div>
 
         <div class="col-sm-4 text-center" id="endingScore" style = "display: none; margin-left: auto; margin-right: auto;">
@@ -85,7 +85,7 @@
             <p class="text-left" id="scoreText"></p>
                 <p class="float-left mr-2">Enter Your Initials<p>
                 <input type="text" class="float-left mr-2" id="initials">
-                <button type="submit" class="btn btn-primary float-left" id="submit">Submit</button>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
         </div>
 
 

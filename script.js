@@ -77,6 +77,7 @@ function startQuiz() {
     index = 0;
     introEl.style.display = "none";
     choices.style.display = "block";
+    
     countdownEl.style.display = "block";
 
     shuffle(questionArr);
