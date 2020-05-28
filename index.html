@@ -15,60 +15,53 @@
 <body>
 
     <container class="content">
-        <div>
-            <nav class="navbar navbar-light bg-light">
 
-                <div id="high-score">
-                    <button type="button" class="btn btn-link">High Score</button>
-                </div>
+        <nav class="navbar navbar-light bg-light">
 
-                <div id="countdown">Time: 0</div>
-
-            </nav>
-
-            <div id="intro">
-                <h1 class="header">Start Quiz</h1>
-
-                <p class="instructive-text">For this quiz you will be asked to answer a series of 5 questions about
-                    coding.
-                    Using the knowledge you've gained since the start of Bootcamp, choose between the 4 options. You
-                    have 1
-                    minute to complete the quiz. You will be given a score based on how quickly you finish the quiz.
-                    Upon
-                    completion, enter your initials to log your score.
-
-                </p>
-
-                <div class="button-container">
-                    <button type="button" id="start-button" class="button">Start Quiz</button>
-                </div>
-
+            <div id="high-score">
+                <button type="button" class="btn btn-link">High Score</button>
             </div>
+
+            <div id="countdown">Time: 0</div>
+
+        </nav>
+
+        <div id="intro">
+            <h1 class="header">Start Quiz</h1>
+
+            <p class="instructive-text">For this quiz you will be asked to answer a series of 5 questions about
+                coding.
+                Using the knowledge you've gained since the start of Bootcamp, choose between the 4 options. You
+                have 75
+                seconds to complete the quiz. You will be given a score based on how quickly you finish the quiz.
+                Upon
+                completion, enter your initials to log your score.
+
+            </p>
+
+            <div class="button-container">
+                <button type="button" id="start-button" class="button">Start Quiz</button>
+            </div>
+
         </div>
 
+
         <div id="choices">
-            <h2 class="question" id="question">Do i still have any energy to dedicate to this homework?</h2>
+            <h2 class="question" id="questionsHeader">Do i still have any energy to dedicate to this homework?</h2>
 
-            <div class="choice1">
-                <button type="button" id="choice1" class="button">No</button>
-            </div>
-
-            <div class="choice2">
-                <button type="button" id="choice1" class="button">No</button>
-            </div>
-
-            <div class="choice3">
-                <button type="button" id="choice1" class="button">No</button>
-            </div>
-
-            <div class="choice4">
-                <button type="button" id="choice1" class="button">No</button>
+            <div id="answer-buttons">
+                <button type="button" id="choice1" class="answer-button">No</button>
+            
+                <button type="button" id="choice2" class="answer-button">No</button>
+            
+                <button type="button" id="choice3" class="answer-button">No</button>
+            
+                <button type="button" id="choice4" class="answer-button">No</button>
             </div>
 
             <div id="answerIndicator">
                 <br>
                 <hr>
-                <h3>You should take a break and watch old NBA games.</h3>
 
                 <p id="indicatorText"></p>
             </div>
@@ -81,10 +74,18 @@
         </div>
 
         <div id="high-scores">
-            <h4>High Scores</h4>
-            <p>asdfadsfadsfasdfad</p>
+            <h2>High Scores</h2>
+            <div class="list-group" id="attachHS"></div> 
             <button type="button" class="btn btn-link" id="back">Back</button>
-            <button type="button" class="btn btn-link" id="clear-high-scores">Clear High Scores</button>
+            <button type="button" class="btn btn-link" id="clearHS">Clear High Scores</button>
+        </div>
+
+        <div class="col-sm-4 text-center" id="endingScore" style = "display: none; margin-left: auto; margin-right: auto;">
+            <h2 class="text-left">Quiz Complete!</h2>
+            <p class="text-left" id="scoreText"></p>
+                <p class="float-left mr-2">Enter Your Initials<p>
+                <input type="text" class="float-left mr-2" id="initials">
+                <button type="submit" class="btn btn-primary float-left" id="submit">Submit</button>
         </div>
 
 
@@ -93,7 +94,6 @@
 
 
     <script src="script.js"></script>
-    <script src=".js"></script>
 </body>
 
 </html>
